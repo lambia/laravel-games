@@ -30,7 +30,7 @@ class GamesTableSeeder extends Seeder
             $newRecord->name = $faker->sentence(4);
             $newRecord->price = $faker->randomFloat(2, 0.99, 69.99);
             $newRecord->release_year = $faker->year(); // oppure $faker->numberBetween(1981, 2024);
-            $newRecord->cover_image = "https://picsum.photos/id/" . $faker->numberBetween(1, 1000) . "/540/960";
+            $newRecord->cover_image = "https://picsum.photos/id/" . $faker->numberBetween(1, 700) . "/540/960";
             $newRecord->vote = $faker->randomDigit(); //equivalente di $faker->numberBetween(0, 9);
             $newRecord->save();
         }
